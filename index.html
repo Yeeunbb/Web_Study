@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Yeeun WEb</title>
-    </head>
-    <body>
-        <h1>Yeeun's first Web</h1>
-
-        <p><em>Yeeun</em>is a greatest gril.</p>
-    </body>
+<head>
+	<title>register web</title>
+</head>
+<body>
+	<form method="GET">
+		Name: <input type="text" name="name" required><br>
+		Number: <input type="text" name="number"><br>
+		Password: <input type="password" name="pw"><br>
+		Gender:<br>
+			<input type="radio" name="gender" value="Male">Male<br>
+			<input type="radio" name="gender" value="Female">Female<br>
+			<input type="radio" name="gender" value="Other">Other<br>
+			<select name="cars">
+					<option value="volvo" name="volvo">Volvo</option>
+					<option value="Audi" name = "Audi">Audi</option>
+			</select><br>
+		<input type="submit" value="Register!">
+		<input type="reset">
+	</form>
+</body>
 </html>
