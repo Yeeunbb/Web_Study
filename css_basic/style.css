@@ -1,14 +1,43 @@
 /* Selector {
     Property: value;
 } */
-h2 {
-    color: red;
+
+* {
+    text-align: right;
+}
+body{
+    background-image: url(https://t1.daumcdn.net/cfile/tistory/25765B3555B4A66A28);
+    background-size: cover;
+}
+
+h2+p:hover {
+    color: #AA4139;
+    text-align: center;
+    border: 5px dashed pink;
+    cursor: pointer;
 }
 
 p {
-    color: pink;
+    color: rgb(255, 176, 170);
 }
 
 p {
     color: green;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.shorttext:last-child{
+    border: 5px solid orange;
+}
+
+.first{
+    color: red;
+}
+
+#div1 {
+    background: rgb(0,0,255 ,0.2);
 }
