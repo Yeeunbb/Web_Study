@@ -5,12 +5,19 @@
 * {
     text-align: right;
 }
-body{
-    background-image: url(https://t1.daumcdn.net/cfile/tistory/25765B3555B4A66A28);
-    background-size: cover;
-}
+/* body{
+     background-image: url(https://t1.daumcdn.net/cfile/tistory/25765B3555B4A66A28); */
+    /* background-size: cover; 
+} */
 
-h2+p:hover {
+/* h2+p:hover {
+    color: #AA4139;
+    text-align: center;
+    border: 5px dashed pink;
+    cursor: pointer;
+} img를 추가해서 얘가 망가져버렷다.*/
+
+p {
     color: #AA4139;
     text-align: center;
     border: 5px dashed pink;
@@ -19,11 +26,31 @@ h2+p:hover {
 
 p {
     color: rgb(255, 176, 170);
+    text-decoration: underline;
+    /* underline : 밑줄
+    line-through : 가운데 줄 그어짐
+    text-transform: uppercase; */
+    text-transform: uppercase; 
+    line-height: 40px;
+    /* line-height은 줄간격 */
+    font-style: italic;
+    font-weight: bold;
+    font-size: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* 컴퓨터에 georgia가 없는 경우, Times new roman이 나온다. */
+
 }
 
-p {
-    color: green;
+img {
+    float: left;
+    /* 텍스트가 이미지를 감싸게 만들 수 있다. */
 }
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
 
 li {
     list-style: none;
@@ -31,13 +58,13 @@ li {
 }
 
 .shorttext:last-child{
-    border: 5px solid orange;
+    border: 5px solid gray;
 }
 
 .first{
     color: red;
 }
 
-#div1 {
+/* #div1 {
     background: rgb(0,0,255 ,0.2);
-}
+} */

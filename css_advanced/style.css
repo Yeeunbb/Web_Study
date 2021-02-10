@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    /* 브라우저 자체 기본 여백을 지워주기 위해 */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 창 크기에 따라서 box들의 위치가 움직인다. */
+    justify-content: center;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    width: 400px;
+    text-align: center;
+    /* 400px짜리 안에서 텍스트는 중앙에 위치하게 된다. */
+    box-shadow: 4px 4px 5px #888888;
+    margin-top: 10px;
+
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+    /* 1초에 걸쳐 이미지가 전환된다. */
+}
+
+img:hover {
+    transform: scale(1.1);
+    /* 마우스를 가져다 되면 1.1배율로 변형한다. */
+}
