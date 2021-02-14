@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>회전초밥 구현</title>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <a href="https://www.youtube.com/watch?v=JpxsRwnRwCQ">
+                <img src="https://img.youtube.com/vi/JpxsRwnRwCQ/maxresdefault.jpg"></a>
+        </div>
+        <div class="item">
+            <a href="https://www.youtube.com/watch?v=AJ-9158BXgo">
+                <img src="https://img.youtube.com/vi/AJ-9158BXgo/maxresdefault.jpg"></a>
+        </div>
+        <div class="item">
+            <a href="https://www.youtube.com/watch?v=lE7XFmWGXDA">
+                <img src="https://img.youtube.com/vi/lE7XFmWGXDA/maxresdefault.jpg"></a>
+        </div>
+        <div class="item">
+            <a href="https://www.youtube.com/watch?v=bnPdqoWRy5Y">
+                <img src="https://img.youtube.com/vi/bnPdqoWRy5Y/maxresdefault.jpg"></a>
+        </div>
+        <div class="item">
+            <a href="https://www.youtube.com/watch?v=nSnPh9NtYR8">
+                <img src="https://img.youtube.com/vi/nSnPh9NtYR8/maxresdefault.jpg"></a>    
+        </div>
+        <div class="item">
+            <a href="https://www.youtube.com/watch?v=wDVs5Lf1XY4">
+                <img src="https://img.youtube.com/vi/wDVs5Lf1XY4/maxresdefault.jpg"></a>
+        </div>
+        <div class="item">
+            <a href="https://www.youtube.com/watch?v=BiqYIfapt-0">
+                <img src="https://img.youtube.com/vi/BiqYIfapt-0/maxresdefault.jpg"></a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            video: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel();
+        });
+
+    </script>
+</body>
+
+</html>

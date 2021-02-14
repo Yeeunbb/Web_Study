@@ -1,0 +1,29 @@
+.owl-dots{display:none;}
+.owl-item img{
+    height: 40px;
+}
+.customPrevBtn, .customNextBtn{
+    background : none;
+    border: none;
+    color: #999999;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media(max-width:768px){
+    .pbPrevBtn, .pbNextBtn{
+        display: none;
+    }
+}
+
+.owl-carousel .item {
+    height: 10rem;
+    background: #4DC7A0;
+    /* padding: 1rem; */
+    margin: 20px;
+
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 100%;
+}
