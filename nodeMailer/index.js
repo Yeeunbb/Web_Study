@@ -1,9 +1,10 @@
+//성공한 파일. node index.js 실행시키면, 메일 간다.
 const nodemailer = require('nodemailer');
 
 const smtpServerURL = 'smtp.gmail.com' //"email SMTP 서버 주소"
 const authUser = 'ykoou3040@gmail.com' //"email 계정 아이디 또는 이메일"
-const authPass = '0016283040yk!' //"email 계정 비밀번호"
-const fromEmail = 'ykoou3040@gmail.com' //'보내는 사람 이메일 주소'
+const authPass = '0016283040yk!!**' //"email 계정 비밀번호"
+const fromEmail = "ykoou3040@gmail.com" //'보내는 사람 이메일 주소'
 
 function sendEmail(toEmail, title, txt) {    
     let transporter = nodemailer.createTransport({
@@ -19,8 +20,8 @@ function sendEmail(toEmail, title, txt) {
         from: fromEmail,        //보내는 사람 주소
         to: toEmail ,           //받는 사람 주소
         subject: title,         //제목
-        text: txt,               //본문
-        html: '<p>아래의 링크를 클릭해주세요 !</p>'
+        text: txt               //본문
+
     };
 
     //전송 시작!
@@ -35,6 +36,6 @@ function sendEmail(toEmail, title, txt) {
     })
 }
 
-sendMail('ykoou@naver.com', 'nodeMailer text', 'hello')
+sendEmail('ykoou@naver.com', 'nodeMailer text', 'hello')
 
 // sendEmail("상대방@이메일주소", "hello", "hello world")
