@@ -51,7 +51,7 @@ body, hmtl{background: #ecf0f1; font-family: 'Anton', sans-serif;}
 
 #slider-wrap ul#slider li > div span{
   font-family: Neucha, Arial, sans serif;
-  font-size:21px;
+  font-size:15px;
 }
 
 #slider-wrap ul#slider li img{
@@ -166,7 +166,23 @@ label {
 }
 
 .Q1 {
-    background-color: pink;
+    background-color: #E0553F;
+}
+
+.Q2 {
+  background-color: #FECE3E;
+}
+
+.Q3 {
+  background-color: #3BAAD8;
+}
+
+.Q4 {
+  background-color: #E07707;
+}
+
+.Q5 {
+  background-color: #1B2B44;
 }
 
 .QS {

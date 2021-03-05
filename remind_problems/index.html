@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -20,52 +19,103 @@
     <div id="wrapper">
         <div id="slider-wrap">
             <ul id="slider">
-                <li class = "Q1">
+                <li class="Q1">
                     <div>
                         <h3>Question #1</h3>
-                        <span>Sub-title #1</span>
+                        <span>정답을 골라보세요.</span>
                         <div class="QS">장애를 가진 사람이라는 의미의<br>단어로서 옳은 표현은 무엇일까요?
                         </div>
-                        <form>
-                            <label><input type="checkbox" name="answer" value="장애자">장애자</label>
-                            <label><input type="checkbox" name="answer" value="장애인">장애인</label>
-                            <label><input type="checkbox" name="answer" value="장애우">장애우</label>
-                            <label><input type="checkbox" name="answer" value="불구자">불구자</label>
+                        <form class="Q1f">
+                            <label><input type="checkbox" name="answer1" 
+                                value="장애자" onclick='checkOnlyOne(this)'> 장애자</label>
+                            <label><input type="checkbox" name="answer1" 
+                                value="장애인" onclick='checkOnlyOne(this)'> 장애인</label>
+                            <label><input type="checkbox" name="answer1" 
+                                value="장애우" onclick='checkOnlyOne(this)'> 장애우</label>
+                            <label><input type="checkbox" name="answer1" 
+                                value="불구자" onclick='checkOnlyOne(this)'> 불구자</label>
                         </form>
                     </div>
-                    <!-- <img src="https://fakeimg.pl/350x200/960a96/000?text=11111"> -->
                 </li>
 
-                <li>
+                <li class="Q2">
                     <div>
-                        <h3>Slide #2</h3>
-                        <span>Sub-title #2</span>
+                        <h3>Question #2</h3>
+                        <span>정답을 골라보세요.</span>
+                        <div class="QS">대한민국 전체인구 중 장애인의<br>비율은 몇 %일까요?
+                        </div>
+                        <form class="Q2f">
+                            <label><input type="checkbox" name="answer2" 
+                                value="0.1%" onclick='checkOnlyOne(this)'> 0.1 %</label>
+                            <label><input type="checkbox" name="answer2" 
+                                value="1%" onclick='checkOnlyOne(this)'> 1 %</label>
+                            <label><input type="checkbox" name="answer2" 
+                                value="5%" onclick='checkOnlyOne(this)'> 5 %</label>
+                            <label><input type="checkbox" name="answer2" 
+                                value="10%" onclick='checkOnlyOne(this)'> 10 %</label>
+                        </form>
                     </div>
-                    <img src="https://fakeimg.pl/350x200/D27328/000?text=22222">
                 </li>
 
-                <li>
+                <li class="Q3">
                     <div>
-                        <h3>Slide #3</h3>
-                        <span>Sub-title #3</span>
+                        <h3>Question #3</h3>
+                        <span>다음 문장의 괄호 안에 들어갈 단어로 적절한 것은 무엇일까요?</span>
+                        <div class="QS">
+                            "장애에 대한 ( )을/를 빼면<br>사람이 보입니다."
+                        </div>
+                        <form class="Q3f">
+                            <label><input type="checkbox" name="answer3" 
+                                value="배려" onclick='checkOnlyOne(this)'> 배려</label>
+                            <label><input type="checkbox" name="answer3" 
+                                value="이해" onclick='checkOnlyOne(this)'> 이해</label>
+                            <label><input type="checkbox" name="answer3" 
+                                value="편견" onclick='checkOnlyOne(this)'> 편견</label>
+                            <label><input type="checkbox" name="answer3" 
+                                value="동정" onclick='checkOnlyOne(this)'> 동정</label>
+                        </form>
                     </div>
-                    <img src="https://fakeimg.pl/350x200/FF607F/000?text=33333">
                 </li>
 
-                <li>
+                <li class="Q4">
                     <div>
-                        <h3>Slide #4</h3>
-                        <span>Sub-title #4</span>
+                        <h3>Question #4</h3>
+                        <span>아래 상황에 해당하는 차별유형은 무엇일까요?</span>
+                        <div class="QS">
+                            시각장애인 A씨는 놀이공원의 <br>놀이기구(롤러코스터)를<br>
+                            탑승하려 하였으나,<br> 정당한 사유없이 제재를 당했습니다.
+                        </div>
+                        <form class="Q4f">
+                            <label><input type="checkbox" name="answer4" 
+                                value="간접차별" onclick='checkOnlyOne(this)'> 간접차별</label>
+                            <label><input type="checkbox" name="answer4" 
+                                value="직접차별" onclick='checkOnlyOne(this)'> 직접차별</label>
+                            <label><input type="checkbox" name="answer4" 
+                                value="광고차별" onclick='checkOnlyOne(this)'> 광고차별</label>
+                            <label><input type="checkbox" name="answer4" 
+                                value="근접차별" onclick='checkOnlyOne(this)'> 근접차별</label>
+                        </form>
                     </div>
-                    <img src="https://fakeimg.pl/350x200/0A6E0A/000?text=44444">
                 </li>
 
-                <li>
+                <li class="Q5">
                     <div>
-                        <h3>Slide #5</h3>
-                        <span>Sub-title #5</span>
+                        <h3>Question #5</h3>
+                        <span>정답을 골라보세요.</span>
+                        <div class="QS">
+                            다음 중 청각장애인이 주로 사용하는<br>의사소통 방법이 아닌 것은 무엇일까요?
+                        </div>
+                        <form class="Q5f">
+                            <label><input type="checkbox" name="answer5" 
+                                value="수어" onclick='checkOnlyOne(this)'> 수어</label>
+                            <label><input type="checkbox" name="answer5" 
+                                value="필담" onclick='checkOnlyOne(this)'> 필담</label>
+                            <label><input type="checkbox" name="answer5" 
+                                value="구화" onclick='checkOnlyOne(this)'> 구화</label>
+                            <label><input type="checkbox" name="answer5" 
+                                value="점자" onclick='checkOnlyOne(this)'> 점자</label>
+                        </form>
                     </div>
-                    <img src="https://fakeimg.pl/350x200/0064CD/000?text=55555">
                 </li>
 
 
@@ -83,9 +133,24 @@
             <!--controls-->
 
         </div>
-
     </div>
-    <script type="text/javascript">
+    <script type="text/javascript"> 
+        function checkOnlyOne(element) { //체크박스 한 개만 선택되도록 하는 함수
+            var formN = element.name;
+            var checkboxes = document.getElementsByName(formN) ;
+            checkboxes.forEach((cb) => {
+                cb.checked = false;
+            })
+            element.checked = true;
+            console.log(element.value);
+        }
+
+        function answerCheck() { 
+            //정답처리 및 점수처리를 어떻게 할지?
+        }
+    </script>
+
+    <script type="text/javascript"> //슬라이드 기능 js
         //current position
         var pos = 0;
         //number of slides
@@ -147,7 +212,6 @@
         });//DOCUMENT READY
 
 
-
         /***********
          SLIDE LEFT
         ************/
@@ -161,7 +225,6 @@
             pagination();
         }
 
-
         /************
          SLIDE RIGHT
         *************/
@@ -174,8 +237,6 @@
             countSlides();
             pagination();
         }
-
-
 
 
         /************************
