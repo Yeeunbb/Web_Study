@@ -154,6 +154,10 @@ label {
     padding-right: 2.5em;
 }
 
+.Q4f label, .Q7f label{
+  font-size: 40px;
+  padding-left: 2em;
+}
 
 
 /*ANIMATION*/
@@ -185,7 +189,16 @@ label {
   background-color: #1B2B44;
 }
 
+.Q6 {
+  background-color: #FECE3E;
+}
+
+.Q7 {
+  background-color: #3BAAD8;
+}
+
 .QS {
     margin-top: 20px;
     font-size: 30px;
 }
+
